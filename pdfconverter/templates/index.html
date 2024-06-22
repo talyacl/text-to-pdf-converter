@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Text to PDF Converter</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      body {
+        background-color: #f8f9fa;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      .container {
+        max-width: 500px;
+      }
+      .card {
+        padding: 20px;
+        border-radius: 10px;
+      }
+      .btn-custom {
+        background-color: #211C6A;
+        color: white;
+      }
+      .btn-custom:hover {
+        background-color: #0C359E;
+        color: white;
+      }
+      .form-group {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .file-input-wrapper {
+        width: 100%;
+        max-width: 200px;
+      }
+      .form-control-file {
+        width: 100%;
+        font-size: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h1 class="card-title text-center">Text to PDF Converter</h1>
+          <form action="/upload" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+              <label for="file">Choose a text file to upload</label>
+              <div class="file-input-wrapper">
+                <input type="file" class="form-control-file" id="file" name="file" required>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-custom btn-block">Upload and Convert</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
